@@ -71,7 +71,6 @@ button[type="submit"]:hover {
   background-color: #d67513;
   border: 1px solid #d67513;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 .caption {

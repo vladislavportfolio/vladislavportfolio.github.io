@@ -92,7 +92,6 @@ nav ul.list-inline a:hover {
   background-color: #67cc67;
   color: #fff;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 nav ul.list-inline {
@@ -149,7 +148,6 @@ section#main .main_button button#btn-exit {
 section#main .main_button button#btn-exit:hover {
   background-color: #d67513;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 section#main .main_button button#btn_main {
@@ -166,7 +164,6 @@ section#main .main_button button#btn_main {
 section#main .main_button button#btn_main:hover {
   background-color: #d67513;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 section#main .main_button button#btn_main2 {
@@ -183,7 +180,6 @@ section#main .main_button button#btn_main2 {
 section#main .main_button button#btn_main2:hover {
   background-color: #d67513;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 /*============    МЕРОПРИЯТИЯ    ===========*/
@@ -214,7 +210,6 @@ section#foto_galereya button.more_button:hover {
   background-color: #66cc66;
   color: #fff;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 section#foto_galereya .card:hover {
@@ -255,7 +250,6 @@ section#creation button.button_creation:hover {
   background-color: #ff9933;
   color: #fff;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 section#creation img {
@@ -302,7 +296,6 @@ section#help button#free_consult:hover {
   background-color: #ff9933;
   color: #fff;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 /*============    ФОТОГАЛЕРЕЯ    ===========*/
@@ -434,7 +427,6 @@ footer .row a {
 .modal-content button[type="submit"]:hover {
   background-color: #d67513;
   -webkit-transition: all .4s;
-  -o-transition: all .4s;
   transition: all .4s;
 }
 .modal-content p {
