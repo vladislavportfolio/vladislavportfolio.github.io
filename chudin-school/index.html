@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 logotype">
-                    <img src="img/logo.png" alt="Логотип школы" class="img-responsive">
+                    <img src="img/logo.png" alt="Логотип школы" class="img-responsive el-1">
                 </div>
                 <div class="col-sm-6 text-center descript">
                     <h4>Чудинская Средняя Школа</h4>
@@ -100,14 +100,14 @@
             </div>
             <div class="row wow fadeInLeft" data-wow-delay='0.3s'>
               
-               <?php if(isset($_SESSION['logged_user'])) : ?>
+               <!--<?php if(isset($_SESSION['logged_user'])) : ?>
                 <h4>Вы вошли под именем <?php echo $_SESSION['logged_user']->login; ?></h4>
                 
                 <div class="row main_button">
-                <a href="/logout.php"><button id="btn_main" class="wow fadeInLeft" data-wow-delay='0.5s' type="submit" href="/signup.php">Выйти</button></a>
+                <a href="/logout.php"><button id="btn-exit" class="wow fadeInLeft" data-wow-delay='0.5s' type="submit" href="/signup.php">Выйти</button></a>
                 </div>
                 
-                <?php else : ?>
+                <?php else : ?>-->
                 <h4>Для того, чтобы оставлять комментарии и быть в курсе <span>всех новостей,пройдите </span><br>бесплатную регистрацию на нашем сайте или <span> войдите в систему</span></h4>
             </div>
             <div class="row main_button">
@@ -217,9 +217,9 @@
                     <br>
                     <?php if(isset($_SESSION['logged_user'])) : ?>
                     <button id="free_consult" data-toggle="modal" href="#free_consult_modal">Бесплатная консультация</button>
-                    <?php else : ?>
+                   <!-- <?php else : ?>
                     <h4>Для того, чтобы задать свой вопрос пройдите бесплатную<br> регистрацию на нашем сайте!</h4>
-                    <?php endif; ?> 
+                    <?php endif; ?> -->
                 </div>
                 <div class="col-md-2">
                     <img class="img_help" src="img/foto-help.jpg" alt="Бесплатная консультация" class="img-responsive help_img center-block">
@@ -276,10 +276,9 @@
          <a href="#">
              <picture>
                  <source type="image/svg+xml" src="img/svg/instagram.svg">
-                 <img src="img/png/instagram.png" alt="Инстаграм">
+                 <img class="inst" src="img/png/instagram.png" alt="Инстаграм">
              </picture>
          </a>
-                <!--<button id="get_answer" data-toggel="model" href="#">Задать вопрос</button> -->
                 </div>
                 </div>
             </div>
@@ -605,13 +604,13 @@
     <script>
       new WOW().init();
     </script>
-    <script>
+    <!--<script>
       $(document).ready(
           function() {
               $("html").niceScroll({cursorcolor:"#000"});
           }
       );
-    </script>
+    </script>-->
     
     <!--Фиксированная навигация "top_nav"-->
     <script>
