@@ -50,12 +50,17 @@ h4 {
   section#main .text-reg {
     width: 330px;
     margin: auto;
+    padding: 0;
+    margin: 0;
   }
   section#main .text-reg h4 {
     margin-top: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     font-size: 11px;
     text-align: center;
+  }
+  section#main .text-reg span {
+    padding: 3px 3px;
   }
   section#main .main_button {
     display: -webkit-box;
