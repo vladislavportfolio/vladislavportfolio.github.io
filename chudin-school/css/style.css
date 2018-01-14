@@ -43,6 +43,22 @@ header {
   padding-bottom: 20px;
   height: 110px;
 }
+header .logotype {
+  margin-top: 5px;
+}
+header .logotype h2 {
+  margin: 0;
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'pfdintextcondprolight';
+  text-transform: uppercase;
+  color: #ff9933;
+  letter-spacing: 3px;
+  font-size: 27px;
+}
+header .logotype h2.logo {
+  margin-left: 40px;
+}
 header .descript h4 {
   font-family: 'pfdintextcondpromedium';
   text-transform: uppercase;
@@ -119,14 +135,16 @@ section#main .main_header h1 span {
   padding-bottom: 7px;
   padding: 7px;
 }
-section#main h4 {
-  margin-left: -2px;
-  font-family: 'pfdintextcondpromedium';
-  color: #262626;
+section#main .text-reg {
+  width: 514px;
 }
-section#main h4 span {
+section#main .text-reg h4 {
   font-family: 'pfdintextcondpromedium';
-  color: #ff9933;
+}
+section#main .text-reg h4 span {
+  margin: 0;
+  background-color: rgba(250, 253, 250, 0.6);
+  padding: 4px 4px;
 }
 section#main .main_button {
   display: table;
