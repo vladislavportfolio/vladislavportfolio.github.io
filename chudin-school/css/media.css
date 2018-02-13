@@ -48,18 +48,11 @@ h4 {
     padding: 10px;
   }
   section#main .text-reg {
-    padding: 0;
-    margin: 0;
     text-align: center;
   }
   section#main .text-reg h4 {
-    margin-top: 8px;
-    margin-bottom: 0;
+    line-height: 20px;
     font-size: 11px;
-    margin-right: 35px;
-  }
-  section#main .text-reg span {
-    padding: 3px 3px;
   }
   section#main .main_button {
     display: -webkit-box;
