@@ -1,483 +1,96 @@
-/*============    ШРИФТЫ    ===========*/
-@font-face {
-  font-family: 'pfdintextcondprobold';
-  src: url('fonts/pfdintextcondprobold.eot');
-  src: url('fonts/pfdintextcondprobold.eot') format('embedded-opentype'), url('fonts/pfdintextcondprobold.woff2') format('woff2'), url('fonts/pfdintextcondprobold.woff') format('woff'), url('fonts/pfdintextcondprobold.ttf') format('truetype'), url('fonts/pfdintextcondprobold.svg#pfdintextcondprobold') format('svg');
-}
-@font-face {
-  font-family: 'pfdintextcondprolight';
-  src: url('fonts/pfdintextcondprolight.eot');
-  src: url('fonts/pfdintextcondprolight.eot') format('embedded-opentype'), url('fonts/pfdintextcondprolight.woff2') format('woff2'), url('fonts/pfdintextcondprolight.woff') format('woff'), url('fonts/pfdintextcondprolight.ttf') format('truetype'), url('fonts/pfdintextcondprolight.svg#pfdintextcondprolight') format('svg');
-}
-@font-face {
-  font-family: 'pfdintextcondpromedium';
-  src: url('fonts/pfdintextcondpromedium.eot');
-  src: url('fonts/pfdintextcondpromedium.eot') format('embedded-opentype'), url('fonts/pfdintextcondpromedium.woff2') format('woff2'), url('fonts/pfdintextcondpromedium.woff') format('woff'), url('fonts/pfdintextcondpromedium.ttf') format('truetype'), url('fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');
-}
-.bold {
-  font-family: 'pfdintextcondprobold';
-}
-.medium {
-  font-family: 'pfdintextcondpromedium';
-}
-.light {
-  font-family: 'pfdintextcondprolight';
-}
-/*============    БАЗОВЫЕ НАСТРОЙКИ    ===========*/
+@font-face{font-family:'pfdintextcondprobold';src:url('fonts/pfdintextcondprobold.eot');src:url('fonts/pfdintextcondprobold.eot') format('embedded-opentype'), url('fonts/pfdintextcondprobold.woff2') format('woff2'), url('fonts/pfdintextcondprobold.woff') format('woff'), url('fonts/pfdintextcondprobold.ttf') format('truetype'), url('fonts/pfdintextcondprobold.svg#pfdintextcondprobold') format('svg');}
+@font-face{font-family:'pfdintextcondprolight';src:url('fonts/pfdintextcondprolight.eot');src:url('fonts/pfdintextcondprolight.eot') format('embedded-opentype'), url('fonts/pfdintextcondprolight.woff2') format('woff2'), url('fonts/pfdintextcondprolight.woff') format('woff'), url('fonts/pfdintextcondprolight.ttf') format('truetype'), url('fonts/pfdintextcondprolight.svg#pfdintextcondprolight') format('svg');}
+@font-face{font-family:'pfdintextcondpromedium';src:url('fonts/pfdintextcondpromedium.eot');src:url('fonts/pfdintextcondpromedium.eot') format('embedded-opentype'), url('fonts/pfdintextcondpromedium.woff2') format('woff2'), url('fonts/pfdintextcondpromedium.woff') format('woff'), url('fonts/pfdintextcondpromedium.ttf') format('truetype'), url('fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');}
+.bold{font-family:'pfdintextcondprobold';}
+.medium{font-family:'pfdintextcondpromedium';}
+.light{font-family:'pfdintextcondprolight';}
 a:fover,
 a:focus,
 a:visited,
-a:active {
-  text-decoration: none;
-}
-.section_header h2 {
-  text-transform: uppercase;
-  color: #4f4f4f;
-  font-size: 30px;
-  font-family: 'pfdintextcondpromedium';
-}
-/*============    ШАПКА    ===========*/
-header {
-  color: #4f4f4f;
-  padding-top: 25px;
-  padding-bottom: 20px;
-  height: 110px;
-}
-header .logotype {
-  margin-top: 5px;
-}
-header .logotype h2 {
-  margin: 0;
-  display: block;
-  margin-bottom: 5px;
-  font-family: 'pfdintextcondprolight';
-  text-transform: uppercase;
-  color: #ff9933;
-  letter-spacing: 3px;
-  font-size: 27px;
-}
-header .logotype h2.logo {
-  margin-left: 40px;
-}
-header .descript h4 {
-  font-family: 'pfdintextcondpromedium';
-  text-transform: uppercase;
-}
-header .descript h5 {
-  font-family: 'pfdintextcondprolight';
-  font-size: 15px;
-}
-header .phone_number {
-  text-align: center;
-}
-header .phone_number h3 {
-  margin-top: 6px;
-}
-header .phone_number p {
-  font-family: 'pfdintextcondprolight';
-}
-header .phone_number a {
-  font-family: 'pfdintextcondpromedium';
-  color: #4f4f4f;
-}
-header .phone_number a:hover {
-  text-decoration: none;
-}
-header .phone_number a:before {
-  /*дописатьдля телефончика*/
-}
-/*============    НАВИГАЦИЯ   ===========*/
-nav {
-  background-color: #fafdfa;
-  top: 120px;
-  /*высота шапки в пикселях*/
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-}
-nav ul.list-inline a {
-  font-family: 'pfdintextcondprolight';
-  font-size: 17px;
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 20px 10px;
-  color: #3d3c3c;
-}
-nav ul.list-inline a:hover {
-  text-decoration: none;
-  background-color: #67cc67;
-  color: #fff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-nav ul.list-inline {
-  margin-bottom: 0px;
-  display: inline-block;
-}
-/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
-section#main {
-  margin-top: 20px;
-  background: url(../img/main-foto.jpg) no-repeat center left;
-  background-size: cover;
-}
-section#main .main_header {
-  margin: 115px 0px 135px -17px;
-}
-section#main .main_header h1 {
-  display: block;
-  margin-bottom: 15px;
-  font-family: 'pfdintextcondprobold';
-  color: #fff;
-  text-transform: uppercase;
-}
-section#main .main_header h1 span {
-  background-color: #67cc67;
-  padding-bottom: 7px;
-  padding: 7px;
-}
-section#main .text-reg {
-  width: 100%;
-}
-section#main .text-reg h4 {
-  font-family: 'pfdintextcondpromedium';
-  line-height: 28px;
-}
-section#main .text-reg h4 span {
-  margin: 0;
-  background-color: rgba(250, 253, 250, 0.6);
-  padding: 4px 4px;
-}
-section#main .main_button {
-  display: table;
-  margin-top: 11px;
-  margin-bottom: 30px;
-  padding-right: 20px;
-}
-section#main .main_button button#btn-exit {
-  margin-left: 14px;
-  border: none;
-  background-color: #ff9933;
-  padding: 17px 35px;
-  color: #fff;
-  font-size: 15px;
-  font-family: 'pfdintextcondpromedium';
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-section#main .main_button button#btn-exit:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-section#main .main_button button#btn_main {
-  margin-right: 20px;
-  border: none;
-  background-color: #ff9933;
-  padding: 17px 35px;
-  color: #fff;
-  font-size: 15px;
-  font-family: 'pfdintextcondpromedium';
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-section#main .main_button button#btn_main:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-section#main .main_button button#btn_main2 {
-  margin-right: 20px;
-  border: none;
-  background-color: #ff9933;
-  padding: 17px 35px;
-  color: #fff;
-  font-size: 15px;
-  font-family: 'pfdintextcondpromedium';
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-section#main .main_button button#btn_main2:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-/*============    МЕРОПРИЯТИЯ    ===========*/
-section#foto_galereya {
-  color: #4f4f4f;
-  padding-top: 50px;
-}
-section#foto_galereya .section_header {
-  margin-bottom: 40px;
-}
-section#foto_galereya h4 {
-  text-transform: uppercase;
-  font-family: 'pfdintextcondpromedium';
-  margin-top: 25px;
-}
-section#foto_galereya button.more_button {
-  font-size: 16px;
-  border: none;
-  color: #66cc66;
-  border: 2px solid #66cc66;
-  padding: 15px 75px;
-  background-color: #fff;
-  text-transform: uppercase;
-  border-radius: 5px;
-  font-family: 'pfdintextcondpromedium';
-}
-section#foto_galereya button.more_button:hover {
-  background-color: #66cc66;
-  color: #fff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-section#foto_galereya .card:hover {
-  padding: 5px 5px;
-  border: 1px solid #66cc66;
-}
-/*==================== ТВОРЧЕСТВО ДЕТЕЙ ===============*/
-section#creation {
-  color: #4f4f4f;
-  margin-top: 70px;
-  padding-bottom: 20px;
-}
-section#creation h2 {
-  text-align: center;
-  font-family: 'pfdintextcondpromedium';
-  text-transform: uppercase;
-  color: #4f4f4f;
-}
-section#creation p {
-  padding-top: 30px;
-  font-size: 20px;
-  font-family: 'pfdintextcondprolight';
-}
-section#creation button {
-  margin-top: 40px;
-}
-section#creation button.button_creation {
-  font-size: 20px;
-  font-family: 'pfdintextcondpromedium';
-  background-color: #fff;
-  color: #ff9933;
-  border: none;
-  border: 2px solid #ff9933;
-  padding: 15px 35px;
-  border-radius: 5px;
-}
-section#creation button.button_creation:hover {
-  background-color: #ff9933;
-  color: #fff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-section#creation img {
-  margin-top: 40px;
-  text-align: center;
-}
-section#creation img.img_creation {
-  width: 101%;
-  height: 101%;
-}
-/*============    БЕСПЛАТНАЯ КОНСУЛЬАТЦИЯ    ===========*/
-section#help {
-  padding-top: 30px;
-  margin-bottom: 20px;
-}
-section#help h2 {
-  text-align: center;
-  color: #ff9933;
-  text-transform: uppercase;
-  font-family: 'pfdintextcondprobold';
-}
-section#help p {
-  padding-top: 80px;
-  color: #4f4f4f;
-  font-family: 'pfdintextcondprolight';
-  font-size: 20px;
-}
-section#help img.img_help {
-  height: 88%;
-  width: 88%;
-  margin-top: 13px;
-}
-section#help button#free_consult {
-  font-size: 20px;
-  font-family: 'pfdintextcondpromedium';
-  background-color: #fff;
-  color: #ff9933;
-  border: none;
-  border: 2px solid #ff9933;
-  padding: 15px 35px;
-  border-radius: 5px;
-}
-section#help button#free_consult:hover {
-  background-color: #ff9933;
-  color: #fff;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-/*============    ФОТОГАЛЕРЕЯ    ===========*/
-section#portfolio {
-  padding-bottom: 20px;
-}
-section#portfolio .row h2 {
-  display: inline-block;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-/*============   ПОДВАЛ    ===========*/
-footer {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  background-color: #4f4f4f;
-  color: #fff;
-}
-footer h2 {
-  font-family: 'pfdintextcondpromedium';
-  margin-left: -17px;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 20px;
-}
-footer .map {
-  margin-top: 25px;
-}
-footer address p#address {
-  margin-bottom: 3px;
-  font-size: 18px;
-  font-family: 'pfdintextcondprolight';
-  text-transform: uppercase;
-}
-footer address p#chudin {
-  font-size: 17px;
-  font-family: 'pfdintextcondprolight';
-}
-footer .row p#phone {
-  margin-bottom: 3px;
-  font-size: 18px;
-  font-family: 'pfdintextcondprolight';
-  text-transform: uppercase;
-}
-footer .row p#number {
-  font-family: 'pfdintextcondprolight';
-  font-size: 17px;
-}
-footer .row img {
-  margin-left: 8px;
-  margin-bottom: 6px;
-  width: 25px;
-}
-footer .row .vk {
-  padding-left: 4px;
-  margin-left: 13px;
-  width: 17px;
-}
-footer .row .tw {
-  margin-top: 4px;
-  width: 30px;
-}
-footer .row .inst {
-  margin-left: 10px;
-}
-footer .row a {
-  border: 1px solid #fff;
-  width: 47px;
-  height: 47px;
-  display: inline-block;
-  border-radius: 50%;
-  vertical-align: middle;
-  line-height: 46px;
-  margin: 0 4px 0 0;
-}
-/*============    МОДАЛЬНЫЕ ОКНА   ===========*/
-.modal-dialog {
-  margin-top: 10%;
-}
-.header_modal_consult {
-  margin: -30px 0 15px 0;
-}
-.header_modal_consult h3 {
-  font-size: 21px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-  font-family: 'pfdintextcondpromedium';
-}
-.modal-header {
-  border-bottom: none;
-  margin-top: -5%;
-}
-.modal-header .close {
-  margin-top: -50px;
-  text-shadow: none;
-  color: #fff;
-  opacity: 0.9;
-  margin-right: -50px;
-}
-.modal-content {
-  border-radius: 0;
-}
+a:active{text-decoration:none;}
+.section_header h2{text-transform:uppercase;color:#4f4f4f;font-size:30px;font-family:'pfdintextcondpromedium';}
+header{color:#4f4f4f;padding-top:25px;padding-bottom:20px;height:110px;}
+header .logotype{margin-top:5px;}
+header .logotype h2{margin:0;display:block;margin-bottom:5px;font-family:'pfdintextcondprolight';text-transform:uppercase;color:#ff9933;letter-spacing:3px;font-size:27px;}
+header .logotype h2.logo{margin-left:40px;}
+header .descript h4{font-family:'pfdintextcondpromedium';text-transform:uppercase;}
+header .descript h5{font-family:'pfdintextcondprolight';font-size:15px;}
+header .phone_number{text-align:center;}
+header .phone_number h3{margin-top:6px;}
+header .phone_number p{font-family:'pfdintextcondprolight';}
+header .phone_number a{font-family:'pfdintextcondpromedium';color:#4f4f4f;}
+header .phone_number a:hover{text-decoration:none;}
+header .phone_number a:before{}
+nav{background-color:#fafdfa;top:120px;position:fixed;z-index:1;width:100%;}
+nav ul.list-inline a{font-family:'pfdintextcondprolight';font-size:17px;display:inline-block;text-transform:uppercase;padding:20px 10px;color:#3d3c3c;}
+nav ul.list-inline a:hover{text-decoration:none;background-color:#67cc67;color:#fff;-webkit-transition:all .4s;transition:all .4s;}
+nav ul.list-inline{margin-bottom:0px;display:inline-block;}
+section#main{margin-top:20px;background:url(../img/main-foto.jpg) no-repeat center left;background-size:cover;}
+section#main .main_header{margin:115px 0px 135px -17px;}
+section#main .main_header h1{display:block;margin-bottom:15px;font-family:'pfdintextcondprobold';color:#fff;text-transform:uppercase;}
+section#main .main_header h1 span{background-color:#67cc67;padding-bottom:7px;padding:7px;}
+section#main .text-reg{width:100%;}
+section#main .text-reg h4{font-family:'pfdintextcondpromedium';line-height:28px;}
+section#main .text-reg h4 span{margin:0;background-color:rgba(250, 253, 250, 0.6);padding:4px 4px;}
+section#main .main_button{display:table;margin-top:11px;margin-bottom:30px;padding-right:20px;}
+section#main .main_button button#btn-exit{margin-left:14px;border:none;background-color:#ff9933;padding:17px 35px;color:#fff;font-size:15px;font-family:'pfdintextcondpromedium';text-transform:uppercase;border-radius:5px;}
+section#main .main_button button#btn-exit:hover{background-color:#d67513;-webkit-transition:all .4s;transition:all .4s;}
+section#main .main_button button#btn_main{margin-right:20px;border:none;background-color:#ff9933;padding:17px 35px;color:#fff;font-size:15px;font-family:'pfdintextcondpromedium';text-transform:uppercase;border-radius:5px;}
+section#main .main_button button#btn_main:hover{background-color:#d67513;-webkit-transition:all .4s;transition:all .4s;}
+section#main .main_button button#btn_main2{margin-right:20px;border:none;background-color:#ff9933;padding:17px 35px;color:#fff;font-size:15px;font-family:'pfdintextcondpromedium';text-transform:uppercase;border-radius:5px;}
+section#main .main_button button#btn_main2:hover{background-color:#d67513;-webkit-transition:all .4s;transition:all .4s;}
+section#foto_galereya{color:#4f4f4f;padding-top:50px;}
+section#foto_galereya .section_header{margin-bottom:40px;}
+section#foto_galereya h4{text-transform:uppercase;font-family:'pfdintextcondpromedium';margin-top:25px;}
+section#foto_galereya button.more_button{font-size:16px;border:none;color:#66cc66;border:2px solid #66cc66;padding:15px 75px;background-color:#fff;text-transform:uppercase;border-radius:5px;font-family:'pfdintextcondpromedium';}
+section#foto_galereya button.more_button:hover{background-color:#66cc66;color:#fff;-webkit-transition:all .4s;transition:all .4s;}
+section#foto_galereya .card:hover{padding:5px 5px;border:1px solid #66cc66;}
+section#creation{color:#4f4f4f;margin-top:70px;padding-bottom:20px;}
+section#creation h2{text-align:center;font-family:'pfdintextcondpromedium';text-transform:uppercase;color:#4f4f4f;}
+section#creation p{padding-top:30px;font-size:20px;font-family:'pfdintextcondprolight';}
+section#creation button{margin-top:40px;}
+section#creation button.button_creation{font-size:20px;font-family:'pfdintextcondpromedium';background-color:#fff;color:#ff9933;border:none;border:2px solid #ff9933;padding:15px 35px;border-radius:5px;}
+section#creation button.button_creation:hover{background-color:#ff9933;color:#fff;-webkit-transition:all .4s;transition:all .4s;}
+section#creation img{margin-top:40px;text-align:center;}
+section#creation img.img_creation{width:101%;height:101%;}
+section#help{padding-top:30px;margin-bottom:20px;}
+section#help h2{text-align:center;color:#ff9933;text-transform:uppercase;font-family:'pfdintextcondprobold';}
+section#help p{padding-top:80px;color:#4f4f4f;font-family:'pfdintextcondprolight';font-size:20px;}
+section#help img.img_help{height:88%;width:88%;margin-top:13px;}
+section#help button#free_consult{font-size:20px;font-family:'pfdintextcondpromedium';background-color:#fff;color:#ff9933;border:none;border:2px solid #ff9933;padding:15px 35px;border-radius:5px;}
+section#help button#free_consult:hover{background-color:#ff9933;color:#fff;-webkit-transition:all .4s;transition:all .4s;}
+section#portfolio{padding-bottom:20px;}
+section#portfolio .row h2{display:inline-block;padding-top:40px;padding-bottom:30px;}
+footer{padding-top:20px;padding-bottom:15px;background-color:#4f4f4f;color:#fff;}
+footer h2{font-family:'pfdintextcondpromedium';margin-left:-17px;text-transform:uppercase;color:#fff;margin-bottom:20px;}
+footer .map{margin-top:25px;}
+footer address p#address{margin-bottom:3px;font-size:18px;font-family:'pfdintextcondprolight';text-transform:uppercase;}
+footer address p#chudin{font-size:17px;font-family:'pfdintextcondprolight';}
+footer .row p#phone{margin-bottom:3px;font-size:18px;font-family:'pfdintextcondprolight';text-transform:uppercase;}
+footer .row p#number{font-family:'pfdintextcondprolight';font-size:17px;}
+footer .row img{margin-left:8px;margin-bottom:6px;width:25px;}
+footer .row .vk{padding-left:4px;margin-left:13px;width:17px;}
+footer .row .tw{margin-top:4px;width:30px;}
+footer .row .inst{margin-left:10px;}
+footer .row a{border:1px solid #fff;width:47px;height:47px;display:inline-block;border-radius:50%;vertical-align:middle;line-height:46px;margin:0 4px 0 0;}
+.modal-dialog{margin-top:10%;}
+.header_modal_consult{margin:-30px 0 15px 0;}
+.header_modal_consult h3{font-size:21px;text-transform:uppercase;color:#4f4f4f;font-family:'pfdintextcondpromedium';}
+.modal-header{border-bottom:none;margin-top:-5%;}
+.modal-header .close{margin-top:-50px;text-shadow:none;color:#fff;opacity:0.9;margin-right:-50px;}
+.modal-content{border-radius:0;}
 .modal-content input[name="name"],
-.modal-content input[name="phone"] {
-  margin-top: 10px;
-  padding: 25px;
-  padding-left: 30px;
-  border-radius: 0;
-  border: 1px solid #cccccccc;
-  font-family: 'pfdintextcondprolight';
-  opacity: 0.5;
-}
+.modal-content input[name="phone"]{margin-top:10px;padding:25px;padding-left:30px;border-radius:0;border:1px solid #cccccccc;font-family:'pfdintextcondprolight';opacity:0.5;}
 .modal-content input[name="name"]:hover,
 .modal-content input[name="phone"]:hover,
 .modal-content input[name="name"]:focus,
-.modal-content input[name="phone"]:focus {
-  opacity: 1;
-}
-.modal-content button[type="submit"] {
-  margin-top: 15px;
-  background-color: #ff9933;
-  color: #fff;
-  border: 1px solid #ff9933;
-  padding: 14px 35px;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: 'pfdintextcondpromedium';
-}
-.modal-content button[type="submit"]:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-.modal-content p {
-  margin-bottom: 70px;
-  font-family: 'pfdintextcondprolight';
-  font-size: 17px;
-}
-.modal-content .fotorama img {
-  margin-top: 7px;
-}
-.modal-header1 {
-  border-bottom: none;
-}
-.header_modal_events h3 {
-  font-size: 21px;
-  margin-left: 25px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-  font-family: 'pfdintextcondpromedium';
-}
-.header_modal_creation h3 {
-  font-size: 21px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #4f4f4f;
-  font-family: 'pfdintextcondpromedium';
-}
-.modal-body strong.fan_white {
-  color: #fff;
-}
-.modal-body p {
-  margin: 0;
-}
-/*============    	АДАПТИВ    ===========*/
+.modal-content input[name="phone"]:focus{opacity:1;}
+.modal-content button[type="submit"]{margin-top:15px;background-color:#ff9933;color:#fff;border:1px solid #ff9933;padding:14px 35px;text-transform:uppercase;width:100%;font-family:'pfdintextcondpromedium';}
+.modal-content button[type="submit"]:hover{background-color:#d67513;-webkit-transition:all .4s;transition:all .4s;}
+.modal-content p{margin-bottom:70px;font-family:'pfdintextcondprolight';font-size:17px;}
+.modal-content .fotorama img{margin-top:7px;}
+.modal-header1{border-bottom:none;}
+.header_modal_events h3{font-size:21px;margin-left:25px;text-transform:uppercase;color:#4f4f4f;font-family:'pfdintextcondpromedium';}
+.header_modal_creation h3{font-size:21px;margin-left:50px;margin-bottom:20px;text-transform:uppercase;color:#4f4f4f;font-family:'pfdintextcondpromedium';}
+.modal-body strong.fan_white{color:#fff;}
+.modal-body p{margin:0;}
