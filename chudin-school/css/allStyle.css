@@ -153,14 +153,7 @@ section#main .main_button {
   margin-top: 11px;
   margin-bottom: 30px;
 }
-section#main .main_button:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-}
 section#main .main_button button#btn_main {
-  width: 255px;
   margin-right: 20px;
   border: none;
   background-color: #ff9933;
@@ -170,12 +163,6 @@ section#main .main_button button#btn_main {
   font-family: 'pfdintextcondpromedium';
   text-transform: uppercase;
   border-radius: 5px;
-}
-section#main .main_button button#btn_main:hover {
-  background-color: #d67513;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
 }
 section#main .main_button button#btn_main2 {
   border: none;
