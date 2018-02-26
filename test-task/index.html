@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Test-task</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	
+	<!-- Bootstrap grid -->
+	<link rel="stylesheet" href="css/libs.min.css">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-md-12 col-lg-3">
+					<div class="partner">
+						<h2 class = "main-text">Permament Partner</h2>
+						<p class = "term">в течение 100 дней</p>
+						<p class = "day-stock">ежедневно</p>
+						<div class="percent">
+							<p class = "amount-sh">2,5</p>
+							<img src="img/persent-img.png" alt="" class="percent-img">
+						</div>
+						<p class = "amount-dep">Сумма вклада: 1000 $ - 15000 $</p>
+					</div>
+					<!-- /.partner -->
+				</div>
+				<!-- /.col-3 -->
+
+				<div class="col-xs-12 col-md-6 col-lg-5">
+					<div class="calc">
+						<h3>Калькулятор прибыли</h3>
+		
+						<div class="profit-calc">
+							<p>Cумма вклада</p>
+							<main>
+								<form oninput="output.value = Math.round(range.valueAsNumber / 1000)">
+									<div class="range">
+										<input name="range" type="range" min="10000" max="1000000" step="10000">
+										<div class="range-output">
+											<output class="output" name="output" for="range" value="$">
+												500
+											</output>
+										</div>
+									</div>
+								</form>
+							</main>
+							<div class="marker">
+								<div class="marker-10">10$</div>
+								<div class="marker-200">200$</div>
+								<div class="marker-400">400$</div>
+								<div class="marker-600">600$</div>
+								<div class="marker-800">800$</div>
+								<div class="marker-1000">1000$</div>
+							</div>
+
+							<div class="profit-btn">
+								<a href="#">Прибыль в сутки<br><span>0,2$</span></a>
+								<a href="#">Общая прибыль<br><span>0,2$</span></a>
+							</div>
+						</div>
+						<div class="profit">
+							<input type="submit" class="btn" name="calc-prof" value="Расчитать прибыль"></div>
+						</div>
+						<!-- /.calc -->
+					</div>
+					<!-- /.col-5 -->
+
+					<div class="col-xs-12 col-md-6 col-lg-4">	
+						<div class="tariff-plan">
+							<h3>Тарифные план Partner</h3>
+							<p>Добро пожаловать  в компанию, которая не только успешно сочетает в себе выгодные направления бизнеса, но также предлагает партнерам.</p>
+							<ul class = "list">
+								<li>Сумма вклада:<span>от 10$ до 100$</span></li>
+								<li>Срок на:<span>1 месяц</span></li>
+								<li>Ваш доход в день:<span>32$</span></li>
+								<li>Начислений:<span>2 раза в сутки</span></li>
+								<li>Прибыль по процентам:<span>13%</span></li>
+							</ul>
+						</div>	
+						<!-- /.tariff-plan -->
+					</div>
+					<!-- /.col-4 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Range Slider Styles -->
+		<link rel="stylesheet" href="css/r-slider.css">
+		<!-- jQuery scripts -->
+		<script src='js/libs.min.js'></script>
+
+		<!-- Range Slider Scripts -->
+		<script src="js/r-slider.js"></script>
+	</body>
+	</html>
